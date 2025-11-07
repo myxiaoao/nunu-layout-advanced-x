@@ -3,6 +3,12 @@
 
 Nunu是一个基于Golang的应用脚手架，它的名字来自于英雄联盟中的游戏角色，一个骑在雪怪肩膀上的小男孩。和努努一样，该项目也是站在巨人的肩膀上，它是由Golang生态中各种非常流行的库整合而成的，它们的组合可以帮助你快速构建一个高效、可靠的应用程序。
 
+`nunu new` 默认拉取github源，你也可以使用本仓库（做了一些调整）
+```
+// 使用本模版
+nunu new projectName -r https://github.com/myxiaoao/nunu-layout-advanced-x.git
+```
+
 [英文介绍](https://github.com/go-nunu/nunu/blob/main/README.md)
 
 ![Nunu](https://github.com/go-nunu/nunu/blob/main/.github/assets/banner.png)
