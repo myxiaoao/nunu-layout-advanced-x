@@ -37,3 +37,4 @@ log:
   max_age: 7
   max_size: 1024
   compress: true
+  daily_rotation: true     # Enable daily log file rotation (creates files like server-2025-01-12.log)
