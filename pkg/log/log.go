@@ -242,3 +242,18 @@ func (l *Logger) WithContext(ctx context.Context) *Logger {
 	}
 	return l
 }
+
+// SanitizeRequestBody sanitizes request body for logging by truncating long content
+// This prevents logging of large base64 images or other binary data
+func SanitizeRequestBody(body []byte) string {
+	const maxLength = 500
+	bodyStr := string(body)
+
+	// If body is shorter than max length, return as-is
+	if len(bodyStr) <= maxLength {
+		return bodyStr
+	}
+
+	// Truncate and add indication
+	return bodyStr[:maxLength] + "... (truncated)"
+}

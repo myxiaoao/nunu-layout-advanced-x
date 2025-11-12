@@ -10,4 +10,8 @@ var (
 
 	// more biz errors
 	ErrEmailAlreadyUse = newError(1001, "The email is already in use.")
+
+	// signature verification errors
+	ErrMissingSignatureHeaders = newError(1100, "Missing required signature headers")
+	ErrSignVerifyFailed        = newError(1101, "Signature verification failed")
 )

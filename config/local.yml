@@ -9,6 +9,9 @@ security:
     app_security: 123456
   jwt:
     key: QQYnRFerJTSEcrfB89fw8prOaObmrch8
+  hmac_signature:
+    app_id: your-app-id-here
+    secret_key: your-secret-key-here-change-in-production
 data:
   db:
     user:
