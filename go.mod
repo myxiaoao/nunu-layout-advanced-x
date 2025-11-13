@@ -1,6 +1,6 @@
 module github.com/go-nunu/nunu-layout-advanced
 
-go 1.23.10
+go 1.25
 
 require (
 	github.com/DATA-DOG/go-sqlmock v1.5.2
